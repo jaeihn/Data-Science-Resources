@@ -1,0 +1,9 @@
+
+table,
+th,
+td {
+    padding: 10px;
+    border: 1px solid black;
+}
+tr:hover {background-color: coral;}
+
