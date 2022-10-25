@@ -1,0 +1,17 @@
+format: jb-book
+root: index
+chapters: 
+- file: cml/header
+  sections:
+  - file: cml/git
+  - file: cml/shell
+- file: python/header
+  sections:
+  - file: python/general
+- file: r/header
+  sections:
+  - file: r/general
+- file: misc/header
+  sections:
+  - file: misc/regex
+  - file: misc/misc
