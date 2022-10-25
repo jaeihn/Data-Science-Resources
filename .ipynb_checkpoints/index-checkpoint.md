@@ -1,3 +1,0 @@
-# Data Science Resources
-
-index
