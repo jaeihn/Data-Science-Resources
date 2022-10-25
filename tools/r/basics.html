@@ -1,0 +1,1236 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Basics &#8212; Data Science Resources</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Data Wrangling" href="wrangling.html" />
+    <link rel="prev" title="R" href="header.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Data Science Resources</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Data Science Resources
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Platforms &amp; Tools
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../command/header.html">
+   Command Line
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../command/bash.html">
+     bash
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../command/git.html">
+     git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../command/env.html">
+     Environments
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../python/header.html">
+   Python
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/basics.html">
+     General
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/wrangling.html">
+     Visualization (altair)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="header.html">
+   R
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="wrangling.html">
+     Data Wrangling
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="doc.html">
+     Documentation
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Data Analysis
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../analysis/overview.html">
+   Data Science Resources
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Visualization
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../viz/altair.html">
+   Python
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     altair
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../viz/ggplot.html">
+   Visualization (ggplot)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Others
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../misc/overview.html">
+   Miscellaneous
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../misc/basics.html">
+     Data Science Software stack
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../misc/regex.html">
+     Regex - Regular Expressions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../misc/misc.html">
+     Markdown &amp; LaTeX
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/jaeihn/data-science-resources/master?urlpath=tree/docs/tools/r/basics.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/jaeihn/data-science-resources"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/jaeihn/data-science-resources/issues/new?title=Issue%20on%20page%20%2Ftools/r/basics.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/tools/r/basics.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#working-directory">
+   Working Directory
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources">
+   Resources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general">
+   General
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-version-of-packages-am-i-using">
+     What version of packages am I using?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#basic-functions">
+     Basic functions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#for-loops">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       for
+      </span>
+     </code>
+     loops
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#if-statements">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       if
+      </span>
+     </code>
+     statements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#writing-custom-functions">
+     Writing custom functions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#switching-between-name-as-string-or-object-using-users-jaeihn-projects-data-science-resources-docs-tools-r-basics-ipynb-100002-error-3-substitution-error-templatesyntaxerror-expected-an-expression-got-end-of-print-statement">
+     Switching between name as string or object using
+     <div class="system-message">
+      <p class="system-message-title">
+       System Message: ERROR/3 (
+       <span class="docutils literal">
+        /Users/jaeihn/projects/Data-Science-Resources/docs/tools/r/basics.ipynb
+       </span>
+       , line 100002)
+      </p>
+      <p>
+       Substitution error:TemplateSyntaxError: Expected an expression, got ‘end of print statement’
+      </p>
+     </div>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#writing-tests">
+     Writing tests
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ignoring-errors">
+     Ignoring errors
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-structures">
+   Data structures
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#date-and-time">
+     Date and Time
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#strings">
+     Strings
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#factors">
+     Factors
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading-writing-data-files">
+   Reading / Writing data files
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#for-plain-text-files">
+     For plain text files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#for-microsoft-excel-files">
+     For Microsoft Excel files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#writing-files">
+     Writing files
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Basics</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#working-directory">
+   Working Directory
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources">
+   Resources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general">
+   General
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-version-of-packages-am-i-using">
+     What version of packages am I using?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#basic-functions">
+     Basic functions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#for-loops">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       for
+      </span>
+     </code>
+     loops
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#if-statements">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       if
+      </span>
+     </code>
+     statements
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#writing-custom-functions">
+     Writing custom functions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#switching-between-name-as-string-or-object-using-users-jaeihn-projects-data-science-resources-docs-tools-r-basics-ipynb-100002-error-3-substitution-error-templatesyntaxerror-expected-an-expression-got-end-of-print-statement">
+     Switching between name as string or object using
+     <div class="system-message">
+      <p class="system-message-title">
+       System Message: ERROR/3 (
+       <span class="docutils literal">
+        /Users/jaeihn/projects/Data-Science-Resources/docs/tools/r/basics.ipynb
+       </span>
+       , line 100002)
+      </p>
+      <p>
+       Substitution error:TemplateSyntaxError: Expected an expression, got ‘end of print statement’
+      </p>
+     </div>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#writing-tests">
+     Writing tests
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ignoring-errors">
+     Ignoring errors
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-structures">
+   Data structures
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#date-and-time">
+     Date and Time
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#strings">
+     Strings
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#factors">
+     Factors
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading-writing-data-files">
+   Reading / Writing data files
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#for-plain-text-files">
+     For plain text files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#for-microsoft-excel-files">
+     For Microsoft Excel files
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#writing-files">
+     Writing files
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="basics">
+<h1>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">#</a></h1>
+<section id="working-directory">
+<h2>Working Directory<a class="headerlink" href="#working-directory" title="Permalink to this headline">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">library(here)</span></code> - Package that helps with correct pathing relative to root project directory</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Function</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">getwd()</span></code></p></td>
+<td class="text-align:left"><p>Get working directory</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><code class="docutils literal notranslate"><span class="pre">setwd(PATH)</span></code></p></td>
+<td class="text-align:left"><p>Set working directory</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://yihui.org/knitr/options/">knitr Documentation</a></p></li>
+<li><p><a class="reference external" href="https://rstats.wtf/">What they forgot to teach you about R</a></p></li>
+<li><p><a class="reference external" href="https://r-cubed.rostools.org/">Reproducible Research in R</a></p></li>
+<li><p><a class="reference external" href="https://www.rstudio.com/blog/renv-project-environments-for-r/">Environments for R renv</a></p></li>
+<li><p><a class="reference external" href="https://r4ds.had.co.nz/index.html">R for Data Science</a></p></li>
+</ul>
+</section>
+<section id="general">
+<h2>General<a class="headerlink" href="#general" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Use &lt;- for assignment</p></li>
+<li><p>indexing starts from 1, not 0</p></li>
+<li><p>copy-on-modify</p></li>
+<li><p>laze evaluation–only when accessed</p></li>
+</ul>
+<section id="what-version-of-packages-am-i-using">
+<h3>What version of packages am I using?<a class="headerlink" href="#what-version-of-packages-am-i-using" title="Permalink to this headline">#</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;devtools&quot;</span><span class="p">)</span>
+<span class="n">devtools</span><span class="o">::</span><span class="nf">session_info</span><span class="p">()</span> 
+</pre></div>
+</div>
+</section>
+<section id="basic-functions">
+<h3>Basic functions<a class="headerlink" href="#basic-functions" title="Permalink to this headline">#</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># import package</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">package</span><span class="p">)</span>
+
+<span class="c1"># import from script</span>
+<span class="nf">source</span><span class="p">(</span><span class="s">&quot;PATH/TO/script.R&quot;</span><span class="p">)</span>
+
+<span class="c1"># return type of x</span>
+<span class="nf">typeof</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># print information of x</span>
+<span class="c1">## try using it on a data frame </span>
+<span class="nf">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># type testing, returns boolean </span>
+<span class="nf">is.logical</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">is.integer</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">is.double</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">is.character</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># type casting</span>
+<span class="nf">as.logical</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">as.integer</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">as.double</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">as.character</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">as_tibble</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># length</span>
+<span class="nf">length</span><span class="p">()</span>
+
+<span class="c1"># create data frame</span>
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="nf">data.frame</span><span class="p">(</span><span class="n">col1</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">),</span> 
+                   <span class="n">col2</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+<section id="for-loops">
+<h3><code class="docutils literal notranslate"><span class="pre">for</span></code> loops<a class="headerlink" href="#for-loops" title="Permalink to this headline">#</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># for each item in vector</span>
+<span class="nf">for </span><span class="p">(</span><span class="n">item</span> <span class="n">in</span> <span class="n">sequence</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1"># action to perform every iteration</span>
+<span class="p">}</span>
+
+<span class="c1"># by index </span>
+<span class="nf">for </span><span class="p">(</span><span class="n">i</span> <span class="n">in</span> <span class="nf">seq_along</span><span class="p">(</span><span class="n">sequence</span><span class="p">))</span> <span class="p">{</span>
+    <span class="c1"># action to perform every iteration</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="if-statements">
+<h3><code class="docutils literal notranslate"><span class="pre">if</span></code> statements<a class="headerlink" href="#if-statements" title="Permalink to this headline">#</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">if </span><span class="p">(</span><span class="n">condition1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1"># then ...</span>
+<span class="p">}</span> <span class="n">else</span> <span class="nf">if </span><span class="p">(</span><span class="n">condition2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1"># then ...</span>
+<span class="p">}</span> <span class="n">else</span> <span class="p">{</span>
+    <span class="c1"># all other cases</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="writing-custom-functions">
+<h3>Writing custom functions<a class="headerlink" href="#writing-custom-functions" title="Permalink to this headline">#</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># named functions</span>
+<span class="n">f</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">(</span><span class="n">param1</span><span class="p">,</span> <span class="n">param2</span><span class="p">,</span> <span class="n">default_param1</span> <span class="o">=</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
+       
+    <span class="c1"># exceptions</span>
+    <span class="nf">if </span><span class="p">(</span><span class="n">condition</span><span class="p">)</span>
+        <span class="nf">stop</span><span class="p">(</span><span class="s">&quot;message describing error&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># content of function</span>
+    
+    <span class="c1"># return if necessary</span>
+    <span class="nf">return </span><span class="p">(</span><span class="kc">...</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1"># anonymous functions (for mapping etc.)</span>
+<span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="n">body_of_function</span>
+</pre></div>
+</div>
+</section>
+<section id="switching-between-name-as-string-or-object-using-users-jaeihn-projects-data-science-resources-docs-tools-r-basics-ipynb-100002-error-3-substitution-error-templatesyntaxerror-expected-an-expression-got-end-of-print-statement">
+<h3>Switching between name as string or object using <a class="headerlink" href="#switching-between-name-as-string-or-object-using-users-jaeihn-projects-data-science-resources-docs-tools-r-basics-ipynb-100002-error-3-substitution-error-templatesyntaxerror-expected-an-expression-got-end-of-print-statement" title="Permalink to this headline">#</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># using enquo() and !!</span>
+<span class="n">f</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">col</span> <span class="o">&lt;-</span> <span class="nf">enquo</span><span class="p">(</span><span class="n">col</span><span class="p">)</span>
+    <span class="nf">filter</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="o">!!</span><span class="n">col</span> <span class="o">==</span> <span class="n">val</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1"># using {{ }} </span>
+<span class="n">f</span> <span class="o">&lt;-</span> <span class="nf">function</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">filter</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="p">{{</span> <span class="n">col</span> <span class="p">}}</span> <span class="o">==</span> <span class="n">val</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1"># </span>
+</pre></div>
+</div>
+</section>
+<section id="writing-tests">
+<h3>Writing tests<a class="headerlink" href="#writing-tests" title="Permalink to this headline">#</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">testthat</span><span class="p">)</span>
+
+<span class="nf">test_that</span><span class="p">(</span><span class="s">&quot;MSG TO PRINT WHEN TEST FAILS&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="c1"># test1</span>
+    <span class="c1"># test2</span>
+    <span class="n">.</span>
+    <span class="n">.</span>
+    <span class="n">.</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>statement</p></th>
+<th class="head"><p>test</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">expect_identical</span></code></p></td>
+<td><p>are two objects exactly equal?</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">expect_equal</span></code></p></td>
+<td><p>are two objects nearly identical (within tolerance)?</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">expect_equivalent</span></code></p></td>
+<td><p>are two objects nearly identical (within tolerance)? (ignores attributes)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">expect_error</span></code></p></td>
+<td><p>does it raise an error?</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">expect_warning</span></code></p></td>
+<td><p>does it raise a warning?</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">expect_output</span></code></p></td>
+<td><p>is the output what it’s supposed to be?</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">expect_true</span></code></p></td>
+<td><p>does it evaluate to TRUE?</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">expect_false</span></code></p></td>
+<td><p>does it evaluate to FALSE?</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ignoring-errors">
+<h3>Ignoring errors<a class="headerlink" href="#ignoring-errors" title="Permalink to this headline">#</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">try</span><span class="p">({</span>
+    <span class="c1"># continue trying, even if it fails midway</span>
+<span class="p">})</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="data-structures">
+<h2>Data structures<a class="headerlink" href="#data-structures" title="Permalink to this headline">#</a></h2>
+<section id="date-and-time">
+<h3>Date and Time<a class="headerlink" href="#date-and-time" title="Permalink to this headline">#</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">lubridate</span><span class="p">)</span>
+
+<span class="c1"># current date</span>
+<span class="nf">today</span><span class="p">()</span>
+
+<span class="c1"># current date and time</span>
+<span class="nf">now</span><span class="p">()</span>
+
+<span class="c1"># converting string or numeric to datetime object</span>
+<span class="nf">ymd</span><span class="p">(</span><span class="s">&quot;2017-01-31&quot;</span><span class="p">)</span>
+<span class="nf">mdy</span><span class="p">(</span><span class="s">&quot;January 31st, 2017&quot;</span><span class="p">)</span>
+<span class="nf">dmy</span><span class="p">(</span><span class="m">31012017</span><span class="p">)</span>
+
+<span class="nf">ymd_hms</span><span class="p">(</span><span class="s">&quot;2017-01-31 20:11:59&quot;</span><span class="p">)</span>
+<span class="nf">mdy_hm</span><span class="p">(</span><span class="s">&quot;01/31/2017 08:01&quot;</span><span class="p">,</span> <span class="n">tz</span> <span class="o">=</span> <span class="s">&quot;UTC&quot;</span><span class="p">)</span>
+
+<span class="c1"># combine columns to make single date column </span>
+<span class="n">data</span> <span class="o">|&gt;</span> 
+    <span class="nf">mutate</span><span class="p">(</span><span class="n">date</span> <span class="o">=</span> <span class="nf">make_date</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">))</span>
+
+<span class="c1"># extract information</span>
+<span class="nf">year</span><span class="p">(</span><span class="n">datetime</span><span class="p">)</span>
+<span class="nf">month</span><span class="p">(</span><span class="n">datetime</span><span class="p">)</span>
+<span class="nf">mday</span><span class="p">(</span><span class="n">datetime</span><span class="p">)</span>
+<span class="nf">yday</span><span class="p">(</span><span class="n">datetime</span><span class="p">)</span>
+<span class="nf">wday</span><span class="p">(</span><span class="n">datetime</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> <span class="n">abbr</span> <span class="o">=</span> <span class="kc">FALSE</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="strings">
+<h3>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">#</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">stringr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">tidyr</span><span class="p">)</span>
+
+
+<span class="c1"># is pattern in x?</span>
+<span class="nf">str_detect</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s">&quot;pattern&quot;</span><span class="p">)</span>
+
+<span class="c1"># what are the actual values that contain the pattern?</span>
+<span class="nf">str_subset</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s">&quot;pattern&quot;</span><span class="p">)</span>
+
+<span class="c1"># split string on delimiter</span>
+<span class="c1"># returns a list</span>
+<span class="nf">str_split</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s">&quot; &quot;</span><span class="p">)</span>
+
+<span class="c1"># split string on delimiter into a preset container </span>
+<span class="c1"># n = width of container </span>
+<span class="nf">str_split_fixed</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">pattern</span> <span class="o">=</span> <span class="s">&quot; &quot;</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="m">2</span><span class="p">)</span>
+
+<span class="c1"># splitting strings in a column into separate columns in data frame</span>
+
+<span class="n">data</span> <span class="o">|&gt;</span> 
+    <span class="nf">separate</span><span class="p">(</span><span class="n">unsplit_col</span><span class="p">,</span> <span class="n">into</span><span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;col1&quot;</span><span class="p">,</span> <span class="s">&quot;col2&quot;</span><span class="p">),</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">&quot; &quot;</span><span class="p">)</span>
+
+<span class="c1"># length of each string</span>
+<span class="nf">str_length</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># substrings </span>
+<span class="nf">str_sub</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">3</span><span class="p">)</span>
+
+<span class="c1"># substrings for assignment</span>
+<span class="nf">str_sub</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">3</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="s">&quot;ABC&quot;</span>
+
+<span class="c1"># collapse a character vector of length n &gt; 1 into a single string</span>
+<span class="n">char_vector</span> <span class="o">|&gt;</span> 
+    <span class="nf">str_c</span><span class="p">(</span><span class="n">collapse</span> <span class="o">=</span> <span class="s">&quot;-&quot;</span><span class="p">)</span>
+
+<span class="c1"># concatenating mulitple vectors</span>
+<span class="nf">str_c</span><span class="p">(</span><span class="n">vec1</span><span class="p">,</span> <span class="n">vec2</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">&quot; &quot;</span><span class="p">)</span>
+
+<span class="c1"># for concatenating in data frames</span>
+<span class="n">data</span> <span class="o">|&gt;</span> 
+    <span class="nf">unite</span><span class="p">(</span><span class="s">&quot;combined_col&quot;</span><span class="p">,</span> <span class="n">col1</span><span class="p">,</span> <span class="n">col2</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">&quot; &quot;</span><span class="p">)</span>
+
+<span class="c1"># replace a pattern</span>
+<span class="nf">str_replace</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s">&quot;pattern&quot;</span><span class="p">,</span> <span class="s">&quot;replacement&quot;</span><span class="p">)</span>
+
+<span class="c1"># replace NA values</span>
+<span class="nf">str_replace_na</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s">&quot;pattern&quot;</span><span class="p">,</span> <span class="s">&quot;replacement&quot;</span><span class="p">)</span>
+
+<span class="c1"># replace NA in data frames</span>
+<span class="nf">replace_na</span><span class="p">()</span>
+
+<span class="c1"># filtering rows containing string</span>
+<span class="n">data</span> <span class="o">|&gt;</span>
+    <span class="nf">filter</span><span class="p">(</span><span class="nf">str_detect</span><span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="s">&quot;pattern&quot;</span><span class="p">))</span>
+
+<span class="c1"># replacing rows containing string</span>
+<span class="n">data</span> <span class="o">|&gt;</span> 
+    <span class="nf">mutate</span><span class="p">(</span><span class="n">col</span> <span class="o">=</span> <span class="nf">str_replace</span><span class="p">(</span><span class="n">col</span><span class="p">,</span>
+                             <span class="s">&quot;pattern&quot;</span><span class="p">,</span>
+                             <span class="s">&quot;replacement&quot;</span><span class="p">))</span>
+
+<span class="c1"># extracts first any search match</span>
+<span class="c1"># returns a character vector </span>
+<span class="nf">str_extract</span><span class="p">(</span><span class="n">sentences</span><span class="p">,</span> <span class="n">search</span><span class="p">)</span>
+
+<span class="c1"># extracts all any search matches</span>
+<span class="c1"># returns a list </span>
+<span class="nf">str_extract_all</span><span class="p">(</span><span class="n">sentences</span><span class="p">,</span> <span class="n">search</span><span class="p">)</span>
+
+<span class="c1"># capture groups of regex</span>
+<span class="n">nou</span> <span class="o">&lt;-</span> <span class="s">&quot;(a|the) ([^ ]+)&quot;</span>
+<span class="nf">str_match</span><span class="p">(</span><span class="n">sentences</span><span class="p">,</span> <span class="n">noun</span><span class="p">)</span> 
+</pre></div>
+</div>
+</section>
+<section id="factors">
+<h3>Factors<a class="headerlink" href="#factors" title="Permalink to this headline">#</a></h3>
+<p>Useful for data visualization</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">forcats</span><span class="p">)</span>
+
+<span class="nf">levels</span><span class="p">(</span><span class="n">col</span><span class="p">)</span>
+<span class="nf">nlevels</span><span class="p">(</span><span class="n">col</span><span class="p">)</span>
+
+<span class="c1"># drop unused levels</span>
+<span class="n">data</span><span class="o">$</span><span class="n">col</span> <span class="o">|&gt;</span>
+    <span class="nf">fct_drop</span><span class="p">()</span>
+
+<span class="c1"># changing order of factors</span>
+<span class="c1">## by frequency </span>
+<span class="n">data</span> <span class="o">|&gt;</span>
+    <span class="nf">mutate</span><span class="p">(</span><span class="n">col</span> <span class="o">=</span> <span class="nf">fct_infreq</span><span class="p">(</span><span class="n">col</span><span class="p">))</span>
+
+<span class="c1">## by reverse frequency</span>
+<span class="n">data</span> <span class="o">|&gt;</span> 
+    <span class="nf">mutate</span><span class="p">(</span><span class="n">col</span> <span class="o">=</span> <span class="nf">fct_infreq</span><span class="p">(</span><span class="n">col</span><span class="p">),</span>
+           <span class="n">col</span> <span class="o">=</span> <span class="nf">fct_rev</span><span class="p">(</span><span class="n">col</span><span class="p">))</span>
+
+<span class="c1"># based on median of another variable / column</span>
+<span class="nf">fct_reorder</span><span class="p">(</span><span class="n">reorder_col</span><span class="p">,</span> <span class="n">by_col</span><span class="p">)</span>
+
+<span class="c1"># based on min of another variable / column</span>
+<span class="nf">fct_reorder</span><span class="p">(</span><span class="n">reorder_col</span><span class="p">,</span> <span class="n">by_col</span><span class="p">,</span> <span class="n">min</span><span class="p">)</span>
+
+<span class="c1"># bring specific factors to front of order</span>
+<span class="n">data</span><span class="o">$</span><span class="n">col</span> <span class="o">|&gt;</span>
+    <span class="nf">fct_relevel</span><span class="p">(</span><span class="s">&quot;level1&quot;</span><span class="p">,</span> <span class="s">&quot;level2&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="reading-writing-data-files">
+<h2>Reading / Writing data files<a class="headerlink" href="#reading-writing-data-files" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Look at the data file first, to choose appropriate function arguments.</p>
+<ul>
+<li><p>Does it have headers?</p></li>
+<li><p>Does it have index names?</p></li>
+<li><p>Does it have meta data?</p></li>
+<li><p>What delimiter does it use?</p></li>
+</ul>
+</li>
+</ul>
+<section id="for-plain-text-files">
+<h3>For plain text files<a class="headerlink" href="#for-plain-text-files" title="Permalink to this headline">#</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">readr</span><span class="p">)</span>
+
+<span class="c1"># Default </span>
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="s">&quot;PATH/TO/FILE/data.csv&quot;</span><span class="p">)</span>
+
+<span class="c1"># Skip rows in the beginning (meta data)</span>
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="s">&quot;PATH/TO/FILE.csv&quot;</span><span class="p">,</span> <span class="n">skip</span> <span class="o">=</span> <span class="m">2</span><span class="p">)</span>
+
+<span class="c1"># If the file provide column names</span>
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="s">&quot;PATH/TO/FILE.csv&quot;</span><span class="p">,</span> <span class="n">col_names</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">)</span>
+
+
+<span class="c1"># Skip rows in the end (meta data)</span>
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="s">&quot;PATH/TO/FILE.csv&quot;</span><span class="p">,</span> <span class="n">n_max</span> <span class="o">=</span> <span class="m">196</span><span class="p">)</span>
+
+<span class="c1"># Specifying delimiter </span>
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="nf">read_delim</span><span class="p">(</span><span class="s">&quot;PATH/TO/FILE.tsv&quot;</span><span class="p">,</span> 
+                   <span class="n">delim</span> <span class="o">=</span> <span class="s">&quot;\t&quot;</span><span class="p">)</span>
+
+<span class="c1"># Reading from URL / website</span>
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="s">&quot;https://URL.com/data.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="for-microsoft-excel-files">
+<h3>For Microsoft Excel files<a class="headerlink" href="#for-microsoft-excel-files" title="Permalink to this headline">#</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">readxl</span><span class="p">)</span>
+
+<span class="c1"># Default</span>
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="nf">read_excel</span><span class="p">(</span><span class="s">&quot;PATH/TO/FILE/data.xlsx&quot;</span><span class="p">)</span>
+
+<span class="c1"># Specify sheet inside Excel file</span>
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="nf">read_excel</span><span class="p">(</span><span class="s">&quot;PATH/TO/FILE/data.xlsx&quot;</span><span class="p">,</span>
+                  <span class="n">sheet</span> <span class="o">=</span> <span class="s">&quot;SHEET-NAME&quot;</span><span class="p">)</span>
+
+<span class="c1"># Reading from URL / website</span>
+<span class="c1">## You cannot read directly from URL, as with .csv files</span>
+<span class="n">url</span> <span class="o">&lt;-</span> <span class="s">&quot;https://URL.com/data.csv&quot;</span>
+<span class="nf">download.file</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="s">&quot;data.csv&quot;</span><span class="p">)</span>
+
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="nf">read_excel</span><span class="p">(</span><span class="s">&quot;data.csv&quot;</span><span class="p">)</span>
+
+<span class="c1">## If on Windows</span>
+<span class="nf">download.file</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="s">&quot;data.csv&quot;</span><span class="p">,</span> <span class="n">mode</span> <span class="o">=</span> <span class="s">&quot;wb&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="writing-files">
+<h3>Writing files<a class="headerlink" href="#writing-files" title="Permalink to this headline">#</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">write_csv</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s">&quot;data/data.csv&quot;</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "r"
+        },
+        kernelOptions: {
+            kernelName: "ir",
+            path: "./tools/r"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'ir'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="header.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">R</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="wrangling.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Data Wrangling</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
