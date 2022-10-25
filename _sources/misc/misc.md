@@ -1,9 +1,3 @@
----
-layout: default
-title:  "Misc"
----
-
-
 # Markdown & LaTeX
 
 * [Markdown Documentation](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)

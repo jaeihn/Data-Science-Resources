@@ -1,9 +1,3 @@
----
-layout: default
-title:  "regex"
----
-
-
 # Regex - Regular Expressions 
 
 * [RegexOne Tutorials](https://regexone.com/)

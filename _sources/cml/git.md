@@ -1,10 +1,4 @@
----
-layout: default
-title:  "git"
----
-
-# git commands
-
+# git Commands
 
 <table>
     <thead>

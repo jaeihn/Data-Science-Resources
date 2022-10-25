@@ -1,8 +1,3 @@
----
-layout: default
-title:  "bash"
----
-
 # bash commands
 
 <table>
