@@ -162,7 +162,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../tools/python/wrangling.html">
-     Visualization (altair)
+     Data Wrangling
     </a>
    </li>
   </ul>
@@ -232,7 +232,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../viz/ggplot.html">
-   Visualization (ggplot)
+   R
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     ggplot
+    </span>
+   </code>
   </a>
  </li>
 </ul>
@@ -469,6 +474,11 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-book">
+   Jupyter Book
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#github-pages">
    Github Pages
   </a>
@@ -512,6 +522,11 @@ title="Print to PDF"
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#rstudio">
    RStudio
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-book">
+   Jupyter Book
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
@@ -564,6 +579,13 @@ title="Print to PDF"
 <ul class="simple">
 <li><p><a class="reference external" href="https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects">RStudio Projects</a></p></li>
 </ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="jupyter-book">
+<h1>Jupyter Book<a class="headerlink" href="#jupyter-book" title="Permalink to this headline">#</a></h1>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jb build docs
+ghp-import -n -p -f docs/_build/html
+</pre></div>
+</div>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="github-pages">
 <h1>Github Pages<a class="headerlink" href="#github-pages" title="Permalink to this headline">#</a></h1>

@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Visualization (altair)" href="wrangling.html" />
+    <link rel="next" title="Data Wrangling" href="wrangling.html" />
     <link rel="prev" title="Python" href="header.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -163,7 +163,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="wrangling.html">
-     Visualization (altair)
+     Data Wrangling
     </a>
    </li>
   </ul>
@@ -233,7 +233,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../viz/ggplot.html">
-   Visualization (ggplot)
+   R
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     ggplot
+    </span>
+   </code>
   </a>
  </li>
 </ul>
@@ -504,6 +509,36 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#list-methods">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       list
+      </span>
+     </code>
+     methods
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#string-methods">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       string
+      </span>
+     </code>
+     methods
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dict-methods">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       dict
+      </span>
+     </code>
+     methods
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#numpy">
      NumPy
     </a>
@@ -623,6 +658,36 @@ title="Print to PDF"
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#basic-functions">
      Basic Functions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#list-methods">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       list
+      </span>
+     </code>
+     methods
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#string-methods">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       string
+      </span>
+     </code>
+     methods
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dict-methods">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       dict
+      </span>
+     </code>
+     methods
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -764,6 +829,35 @@ deepcopy()
 </pre></div>
 </div>
 </section>
+<section id="list-methods">
+<h3><code class="docutils literal notranslate"><span class="pre">list</span></code> methods<a class="headerlink" href="#list-methods" title="Permalink to this headline">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># list filled with repeated values</span>
+<span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span>
+</pre></div>
+</div>
+</section>
+<section id="string-methods">
+<h3><code class="docutils literal notranslate"><span class="pre">string</span></code> methods<a class="headerlink" href="#string-methods" title="Permalink to this headline">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># formatted string </span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Value of </span><span class="si">{</span><span class="n">pi</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s2">0.8f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="dict-methods">
+<h3><code class="docutils literal notranslate"><span class="pre">dict</span></code> methods<a class="headerlink" href="#dict-methods" title="Permalink to this headline">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># iterating through dict</span>
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="o">...</span>
+
+<span class="c1"># delete items</span>
+<span class="nb">dict</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">)</span>
+<span class="k">del</span> <span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span>
+
+<span class="c1"># catch invalid key with custom message</span>
+<span class="nb">dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">,</span> <span class="s1">&#39;message for invalid key&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
 <section id="numpy">
 <h3>NumPy<a class="headerlink" href="#numpy" title="Permalink to this headline">#</a></h3>
 <table class="colwidths-auto table">
@@ -857,8 +951,10 @@ deepcopy()
 <span class="c1"># use custom error </span>
 <span class="k">if</span> <span class="n">some_condition</span><span class="p">:</span>
     <span class="k">raise</span> <span class="n">CustomError</span>
-    
-    
+<span class="c1"># or just general Exception</span>
+<span class="k">if</span> <span class="n">some_condition</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Error message to show&quot;</span><span class="p">)</span>
+
 <span class="k">try</span><span class="p">:</span>
     <span class="c1"># test to see if it throws errors</span>
 <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span> 
@@ -1132,7 +1228,7 @@ deepcopy()
     <a class='right-next' id="next-link" href="wrangling.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Visualization (altair)</p>
+        <p class="prev-next-title">Data Wrangling</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

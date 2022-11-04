@@ -30,6 +30,11 @@ options(repr.matrix.max.rows = 10)
 
 * [RStudio Projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
 
+# Jupyter Book
+```bash
+jb build docs
+ghp-import -n -p -f docs/_build/html
+```
 
 # Github Pages
 
