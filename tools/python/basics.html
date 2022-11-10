@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>General &#8212; Data Science Resources</title>
+    <title>Python &#8212; Data Science Resources</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Data Wrangling" href="wrangling.html" />
-    <link rel="prev" title="Python" href="header.html" />
+    <link rel="next" title="Functions" href="functions.html" />
+    <link rel="prev" title="Environments" href="../command/env.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -147,7 +147,7 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="header.html">
+  <a class="current reference internal" href="#">
    Python
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -155,10 +155,10 @@ const thebe_selector_output = ".output, .cell_output"
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     General
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="functions.html">
+     Functions
     </a>
    </li>
    <li class="toctree-l2">
@@ -482,67 +482,10 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#print-session-info">
-   print session info
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#algorithms-data-structures">
-   Algorithms &amp; Data Structures
+  <a class="reference internal nav-link" href="#textbooks">
+   Textbooks
   </a>
   <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#complexity">
-     Complexity
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   General
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#basic-functions">
-     Basic Functions
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#list-methods">
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       list
-      </span>
-     </code>
-     methods
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#string-methods">
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       string
-      </span>
-     </code>
-     methods
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#dict-methods">
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       dict
-      </span>
-     </code>
-     methods
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#numpy">
-     NumPy
-    </a>
-   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#if-statement">
      <code class="docutils literal notranslate">
@@ -554,8 +497,45 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#loops">
-     Loops
+    <a class="reference internal nav-link" href="#for-loop">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       for
+      </span>
+     </code>
+     -Loop
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#while-loop">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       while
+      </span>
+     </code>
+     -Loop
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#list-comprehension-set-comprehension-dict-comprehension">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       list
+      </span>
+     </code>
+     Comprehension /
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       set
+      </span>
+     </code>
+     Comprehension /
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       dict
+      </span>
+     </code>
+     Comprehension
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -574,30 +554,13 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#defining-custom-errors">
+     Defining custom errors
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#testing">
      Testing
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-wrangling">
-   Data Wrangling
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#toolbox">
-   Toolbox
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#timer-wrapper-for-functions-by-arman">
-     Timer wrapper for functions (by Arman)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#array-broadcastability-by-arman">
-     Array broadcastability (by Arman)
     </a>
    </li>
   </ul>
@@ -610,6 +573,16 @@ title="Print to PDF"
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#numpy-scipy">
      NumPy/Scipy
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#print-session-info">
+     print session info
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#complexity">
+     Complexity
     </a>
    </li>
   </ul>
@@ -623,7 +596,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>General</h1>
+                <h1>Python</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -634,67 +607,10 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#print-session-info">
-   print session info
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#algorithms-data-structures">
-   Algorithms &amp; Data Structures
+  <a class="reference internal nav-link" href="#textbooks">
+   Textbooks
   </a>
   <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#complexity">
-     Complexity
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   General
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#basic-functions">
-     Basic Functions
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#list-methods">
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       list
-      </span>
-     </code>
-     methods
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#string-methods">
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       string
-      </span>
-     </code>
-     methods
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#dict-methods">
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       dict
-      </span>
-     </code>
-     methods
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#numpy">
-     NumPy
-    </a>
-   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#if-statement">
      <code class="docutils literal notranslate">
@@ -706,8 +622,45 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#loops">
-     Loops
+    <a class="reference internal nav-link" href="#for-loop">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       for
+      </span>
+     </code>
+     -Loop
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#while-loop">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       while
+      </span>
+     </code>
+     -Loop
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#list-comprehension-set-comprehension-dict-comprehension">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       list
+      </span>
+     </code>
+     Comprehension /
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       set
+      </span>
+     </code>
+     Comprehension /
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       dict
+      </span>
+     </code>
+     Comprehension
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -726,30 +679,13 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#defining-custom-errors">
+     Defining custom errors
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#testing">
      Testing
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#data-wrangling">
-   Data Wrangling
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#toolbox">
-   Toolbox
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#timer-wrapper-for-functions-by-arman">
-     Timer wrapper for functions (by Arman)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#array-broadcastability-by-arman">
-     Array broadcastability (by Arman)
     </a>
    </li>
   </ul>
@@ -762,6 +698,16 @@ title="Print to PDF"
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#numpy-scipy">
      NumPy/Scipy
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#print-session-info">
+     print session info
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#complexity">
+     Complexity
     </a>
    </li>
   </ul>
@@ -776,145 +722,16 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="general">
-<h1>General<a class="headerlink" href="#general" title="Permalink to this headline">#</a></h1>
-<section id="print-session-info">
-<h2>print session info<a class="headerlink" href="#print-session-info" title="Permalink to this headline">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!pip install session_info
-
-import session_info
-
-session_info.show()
-</pre></div>
-</div>
-</section>
-<section id="algorithms-data-structures">
-<h2>Algorithms &amp; Data Structures<a class="headerlink" href="#algorithms-data-structures" title="Permalink to this headline">#</a></h2>
-<section id="complexity">
-<h3>Complexity<a class="headerlink" href="#complexity" title="Permalink to this headline">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="o">%</span><span class="n">timeit</span> <span class="o">-</span><span class="n">r1</span> <span class="o">-</span><span class="n">n1</span> <span class="n">code</span>
-
-<span class="n">big_number</span> <span class="o">=</span> <span class="mi">10_000_000</span>
-</pre></div>
-</div>
-<p>Built-in Python <code class="docutils literal notranslate"><span class="pre">sort()</span></code> uses …</p>
-<p>batch multiplication (loop vs. vectorized)</p>
-</section>
-</section>
-<section id="id1">
-<h2>General<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
-<section id="basic-functions">
-<h3>Basic Functions<a class="headerlink" href="#basic-functions" title="Permalink to this headline">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span># print all list methods
-dir(list)
-
-range()
-zip()
-enumerate()
-isinstance(object, type)
-
-# when comparing float, to avoid rounding errors
-math.isclose()
-np.isclose() 
-
-# execute shell commands by appending !
-!flake8 file.py
-
-copy()
-deepcopy()
-</pre></div>
-</div>
-</section>
-<section id="list-methods">
-<h3><code class="docutils literal notranslate"><span class="pre">list</span></code> methods<a class="headerlink" href="#list-methods" title="Permalink to this headline">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># list filled with repeated values</span>
-<span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span>
-</pre></div>
-</div>
-</section>
-<section id="string-methods">
-<h3><code class="docutils literal notranslate"><span class="pre">string</span></code> methods<a class="headerlink" href="#string-methods" title="Permalink to this headline">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># formatted string </span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Value of </span><span class="si">{</span><span class="n">pi</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">pi</span><span class="si">:</span><span class="s2">0.8f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
-<section id="dict-methods">
-<h3><code class="docutils literal notranslate"><span class="pre">dict</span></code> methods<a class="headerlink" href="#dict-methods" title="Permalink to this headline">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># iterating through dict</span>
-<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-    <span class="o">...</span>
-
-<span class="c1"># delete items</span>
-<span class="nb">dict</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">)</span>
-<span class="k">del</span> <span class="nb">dict</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">]</span>
-
-<span class="c1"># catch invalid key with custom message</span>
-<span class="nb">dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;key&#39;</span><span class="p">,</span> <span class="s1">&#39;message for invalid key&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
-<section id="numpy">
-<h3>NumPy<a class="headerlink" href="#numpy" title="Permalink to this headline">#</a></h3>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Function</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>np.arange()</p></td>
-<td><p>sequence ranging from a to b</p></td>
-</tr>
-<tr class="row-odd"><td><p>np.linspace()</p></td>
-<td><p>linearly spaced sequence</p></td>
-</tr>
-<tr class="row-even"><td><p>np.ones</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>np.zeros</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>np.full</p></td>
-<td><p>fill dimension with values</p></td>
-</tr>
-<tr class="row-odd"><td><p>np.random.rand()</p></td>
-<td><p>fill with random values</p></td>
-</tr>
-<tr class="row-even"><td><p>np.transpose()</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>np.T</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>np.mean()</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>np.astype(int)</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>np.shape</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>np.reshape()</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>np.newaxis</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p>np.ravel()</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p>np.flatten()</p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="python">
+<h1>Python<a class="headerlink" href="#python" title="Permalink to this headline">#</a></h1>
+<section id="textbooks">
+<h2>Textbooks<a class="headerlink" href="#textbooks" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Whirlwind Tour of Python <a class="reference external" href="https://jakevdp.github.io/WhirlwindTourOfPython/index.html">https://jakevdp.github.io/WhirlwindTourOfPython/index.html</a></p></li>
+<li><p>Docstrings - <a class="reference external" href="https://peps.python.org/pep-0257/">https://peps.python.org/pep-0257/</a></p></li>
+<li><p>Python Data Science Handbook <a class="reference external" href="https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html">https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html</a></p></li>
+</ul>
+<hr class="docutils" />
 <section id="if-statement">
 <h3><code class="docutils literal notranslate"><span class="pre">if</span></code> statement<a class="headerlink" href="#if-statement" title="Permalink to this headline">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default</span>
@@ -930,22 +747,58 @@ deepcopy()
 </pre></div>
 </div>
 </section>
-<section id="loops">
-<h3>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># for loop</span>
+<section id="for-loop">
+<h3><code class="docutils literal notranslate"><span class="pre">for</span></code>-Loop<a class="headerlink" href="#for-loop" title="Permalink to this headline">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># one sequence</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">sequence</span><span class="p">:</span> 
     <span class="o">...</span>
     
-<span class="c1"># while loop</span>
-<span class="k">while</span> <span class="n">condition</span><span class="p">:</span>
+<span class="c1"># multiple sequences together</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
     <span class="o">...</span>
+
+<span class="c1"># numbering list elements</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span>
+    <span class="o">...</span>
+
+<span class="c1"># numbering dict elements</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">dict</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+    <span class="o">...</span>
+
+<span class="c1"># key-value in dict</span>
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">dict</span><span class="p">:</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</section>
+<section id="while-loop">
+<h3><code class="docutils literal notranslate"><span class="pre">while</span></code>-Loop<a class="headerlink" href="#while-loop" title="Permalink to this headline">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="n">condition</span><span class="p">:</span>
+</pre></div>
+</div>
+</section>
+<section id="list-comprehension-set-comprehension-dict-comprehension">
+<h3><code class="docutils literal notranslate"><span class="pre">list</span></code> Comprehension / <code class="docutils literal notranslate"><span class="pre">set</span></code> Comprehension / <code class="docutils literal notranslate"><span class="pre">dict</span></code> Comprehension<a class="headerlink" href="#list-comprehension-set-comprehension-dict-comprehension" title="Permalink to this headline">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># list comprehension</span>
+
+<span class="c1">## multiple variables</span>
+<span class="p">[(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="o">...</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="o">...</span><span class="p">]</span>
+
+<span class="c1">## if-else structure</span>
+<span class="p">[</span><span class="n">i</span> <span class="o">/</span> <span class="mi">2</span> <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="k">else</span> <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="o">...</span><span class="p">]</span>
+
+<span class="c1"># set comprehension</span>
+<span class="p">{</span><span class="n">i</span> <span class="o">*</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="o">...</span><span class="p">}</span> 
+
+<span class="c1"># dict comprehension</span>
+<span class="p">{</span><span class="n">word</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="o">...</span><span class="p">}</span>
 </pre></div>
 </div>
 </section>
 <section id="exceptions">
 <h3>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
-<span class="c1"># define custom errors</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># define custom errors</span>
 <span class="k">class</span> <span class="nc">CustomError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
     <span class="k">pass</span>
 <span class="c1"># use custom error </span>
@@ -955,6 +808,18 @@ deepcopy()
 <span class="k">if</span> <span class="n">some_condition</span><span class="p">:</span>
     <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;Error message to show&quot;</span><span class="p">)</span>
 
+
+<span class="c1"># you can respond to different types of exceptions separately</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="o">...</span>
+<span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+    <span class="o">...</span>
+<span class="k">except</span> <span class="ne">NameError</span><span class="p">:</span>
+    <span class="o">...</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="o">...</span>
+    
+    
 <span class="k">try</span><span class="p">:</span>
     <span class="c1"># test to see if it throws errors</span>
 <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span> 
@@ -965,23 +830,26 @@ deepcopy()
     <span class="c1"># do if no errors are caught</span>
 <span class="k">finally</span><span class="p">:</span>
     <span class="c1"># do something after everything ends,</span>
-    <span class="c1"># regardless of errror or non-error</span>
-
+    <span class="c1"># regardless of error or non-error</span>
 </pre></div>
 </div>
 </section>
+<hr class="docutils" />
 <section id="defining-custom-functions">
 <h3>Defining custom functions<a class="headerlink" href="#defining-custom-functions" title="Permalink to this headline">#</a></h3>
+<p>We can supply <code class="docutils literal notranslate"><span class="pre">*args</span></code> for arbitrary number of positional arguments, <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code> for keyword arguments.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default</span>
-<span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="c1"># content</span>
-    <span class="k">return</span> <span class="n">output</span>
+    <span class="k">return</span> <span class="n">output1</span><span class="p">,</span> <span class="n">output2</span>
 
 <span class="c1"># anonymous function</span>
 <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">+</span><span class="mi">1</span>
+
+<span class="c1">## multiple arguments and multiple outputs</span>
+<span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="p">(</span><span class="n">output1</span><span class="p">,</span> <span class="n">output2</span><span class="p">)(</span><span class="n">input1</span><span class="p">,</span> <span class="n">input2</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>We can supply <code class="docutils literal notranslate"><span class="pre">*args</span></code> for arbitrary number of positional arguments, <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code> for keyword arguments.</p>
 </section>
 <section id="defining-custom-classes">
 <h3>Defining custom classes<a class="headerlink" href="#defining-custom-classes" title="Permalink to this headline">#</a></h3>
@@ -1023,130 +891,19 @@ deepcopy()
     <span class="o">@&lt;</span><span class="n">attribute</span><span class="o">&gt;.</span><span class="n">deleter</span>
     <span class="k">def</span> <span class="nf">prop</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="c1"># set to None to delete</span>
-        
-        
+</pre></div>
+</div>
+</section>
+<section id="defining-custom-errors">
+<h3>Defining custom errors<a class="headerlink" href="#defining-custom-errors" title="Permalink to this headline">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">CustomError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="k">pass</span>
 </pre></div>
 </div>
 </section>
 <section id="testing">
 <h3>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">expression</span><span class="p">,</span> <span class="s2">&quot;Error message&quot;</span>
-</pre></div>
-</div>
-</section>
-</section>
-<section id="data-wrangling">
-<h2>Data Wrangling<a class="headerlink" href="#data-wrangling" title="Permalink to this headline">#</a></h2>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-
-<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-<span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-<span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">dtypes</span>
-
-<span class="c1"># renaming columns</span>
-<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span> <span class="p">{</span><span class="s2">&quot;old_col1&quot;</span> <span class="p">:</span> <span class="s2">&quot;new_col1&quot;</span><span class="p">,</span>
-                    <span class="s2">&quot;old_col2&quot;</span> <span class="p">:</span> <span class="s2">&quot;new_col2&quot;</span><span class="p">})</span>
-<span class="n">df</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">list_of_column_names</span>
-
-<span class="c1"># set column as index</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="n">col</span><span class="p">)</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
-
-<span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;col&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">()</span>
-<span class="n">df</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">numeric_only</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">df</span><span class="o">.</span><span class="n">idxmin</span><span class="p">()</span>
-
-
-<span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">list_of_col</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># pivot longer</span>
-<span class="n">df</span><span class="o">.</span><span class="n">melt</span><span class="p">(</span><span class="n">id_vars</span><span class="o">=</span> <span class="p">,</span> 
-        <span class="n">value_vars</span><span class="o">=</span> <span class="p">,</span> 
-        <span class="n">var_name</span><span class="o">=</span><span class="p">,</span> 
-        <span class="n">ignore_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-
-<span class="c1"># pivot wider</span>
-<span class="n">df</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span> <span class="p">,</span>
-         <span class="n">columns</span><span class="o">=</span> <span class="p">,</span>
-         <span class="n">values</span><span class="o">=</span> <span class="p">)</span>
-
-<span class="c1"># append data frame vertically</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">((</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="c1">#append data frame horizontally</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">((</span><span class="n">df1</span><span class="p">,</span> <span class="n">df2</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-</pre></div>
-</div>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="head"><p>Method</p></th>
-<th class="head"><p>Syntax</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Select column</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">df[col_label]</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>Select row slice</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">df[row_1_int:row_2_int]</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>Select row/column by label</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">df.loc[row_label(s),</span> <span class="pre">col_label(s)]</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>Select row/column by integer</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">df.iloc[row_int(s),</span> <span class="pre">col_int(s)]</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>Select by row integer &amp; column label</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">df.loc[df.index[row_int],</span> <span class="pre">col_label]</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>Select by row label &amp; column integer</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">df.loc[row_label,</span> <span class="pre">df.columns[col_int]]</span></code></p></td>
-</tr>
-<tr class="row-even"><td><p>Select by boolean</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">df[bool_vec]</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>Select by boolean expression</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">df.query(&quot;expression&quot;)</span></code></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="toolbox">
-<h2>Toolbox<a class="headerlink" href="#toolbox" title="Permalink to this headline">#</a></h2>
-<section id="timer-wrapper-for-functions-by-arman">
-<h3>Timer wrapper for functions (by Arman)<a class="headerlink" href="#timer-wrapper-for-functions-by-arman" title="Permalink to this headline">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">time</span> 
-
-<span class="k">def</span> <span class="nf">timer</span><span class="p">(</span><span class="n">f</span><span class="p">):</span> 
-    <span class="k">def</span> <span class="nf">wrapper</span><span class="p">():</span>  
-        <span class="n">t1</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-        <span class="n">result</span> <span class="o">=</span> <span class="n">f</span><span class="p">()</span>  
-        <span class="n">t2</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">my_function</span><span class="o">.</span><span class="vm">__name__</span><span class="si">}</span><span class="s2"> ran in </span><span class="si">{</span><span class="n">t2</span> <span class="o">-</span> <span class="n">t1</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2"> sec&quot;</span><span class="p">)</span> 
-        <span class="k">return</span> <span class="n">result</span>
-    <span class="k">return</span> <span class="n">wrapper</span>
-
-<span class="nd">@timer</span>
-<span class="n">f</span><span class="p">()</span>
-</pre></div>
-</div>
-</section>
-<section id="array-broadcastability-by-arman">
-<h3>Array broadcastability (by Arman)<a class="headerlink" href="#array-broadcastability-by-arman" title="Permalink to this headline">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">broadcastable</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The shape of a is:&quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">a</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The shape of b is:&quot;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">b</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The shape of a + b is: </span><span class="si">{</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="k">except</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;ERROR: arrays are NOT broadcast compatible!&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -1188,7 +945,31 @@ deepcopy()
 </pre></div>
 </div>
 </section>
+<section id="print-session-info">
+<h3>print session info<a class="headerlink" href="#print-session-info" title="Permalink to this headline">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>!pip install session_info
+
+import session_info
+
+session_info.show()
+</pre></div>
+</div>
 </section>
+<section id="complexity">
+<h3>Complexity<a class="headerlink" href="#complexity" title="Permalink to this headline">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="o">%</span><span class="n">timeit</span> <span class="o">-</span><span class="n">r1</span> <span class="o">-</span><span class="n">n1</span> <span class="n">code</span>
+
+<span class="n">big_number</span> <span class="o">=</span> <span class="mi">10_000_000</span>
+</pre></div>
+</div>
+</section>
+</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1218,17 +999,17 @@ deepcopy()
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="header.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../command/env.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Python</p>
+            <p class="prev-next-title">Environments</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="wrangling.html" title="next page">
+    <a class='right-next' id="next-link" href="functions.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Data Wrangling</p>
+        <p class="prev-next-title">Functions</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
