@@ -487,6 +487,36 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#is-vs">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       is
+      </span>
+     </code>
+     vs.
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       ==
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#copy-vs-deepcopy">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       copy()
+      </span>
+     </code>
+     vs.
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       deepcopy()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#if-statement">
      <code class="docutils literal notranslate">
       <span class="pre">
@@ -612,6 +642,36 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#is-vs">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       is
+      </span>
+     </code>
+     vs.
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       ==
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#copy-vs-deepcopy">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       copy()
+      </span>
+     </code>
+     vs.
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       deepcopy()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#if-statement">
      <code class="docutils literal notranslate">
       <span class="pre">
@@ -732,6 +792,21 @@ title="Print to PDF"
 <li><p>Python Data Science Handbook <a class="reference external" href="https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html">https://jakevdp.github.io/PythonDataScienceHandbook/02.00-introduction-to-numpy.html</a></p></li>
 </ul>
 <hr class="docutils" />
+<section id="is-vs">
+<h3><code class="docutils literal notranslate"><span class="pre">is</span></code> vs. <code class="docutils literal notranslate"><span class="pre">==</span></code><a class="headerlink" href="#is-vs" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">is</span></code> compares if the references point to the same object in memory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">==</span></code> compares the value of the contents</p></li>
+</ul>
+</section>
+<section id="copy-vs-deepcopy">
+<h3><code class="docutils literal notranslate"><span class="pre">copy()</span></code> vs. <code class="docutils literal notranslate"><span class="pre">deepcopy()</span></code><a class="headerlink" href="#copy-vs-deepcopy" title="Permalink to this headline">#</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">copy</span></code></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">copy()</span></code> only copies the outer-most object (틀)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">deepcopy()</span></code> copies all the way down (구조까지)</p></li>
+</ul>
+</section>
 <section id="if-statement">
 <h3><code class="docutils literal notranslate"><span class="pre">if</span></code> statement<a class="headerlink" href="#if-statement" title="Permalink to this headline">#</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># default</span>
